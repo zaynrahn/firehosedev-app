@@ -1,3 +1,17 @@
 <h1>Umeed's reviews of test-driven cars.</h1>
 <p>A page dedicated to my brother's love of cars. He loves to test drive and talk about them so I thought it would be a good idea for my Quiz app.</p>
 
+<br/>
+<br/>
+<br/>
+
+<div class="col-8 offset-2">
+  <h2>Enter Your Car Details Here:</h2>
+  <%= simple_form_for @car do |f| %>
+    <%= f.input :model, placeholder: 'Audi R8' %>
+    <%= f.input :year, placeholder: '2015' %>
+    <%= f.input :color, placeholder: 'Baby Blue' %>
+    <%= f.input :description, placeholder: 'What makes this car special to you?' %>
+    <%= f.submit "Submit My Ride", class: 'btn btn-success' %>
+  <% end %>
+</div>
